@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MonRDV - Rendez-vous Médical en Ligne</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <!-- Logo + Nom -->
+            <a href="#" class="logo">
+                <!-- Logo image (à remplacer plus tard) -->
+                <div class="logo-icon">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <div class="site-name">
+                    <h1>MonRDV</h1>
+                    <p class="tagline">Rendez-vous médical simplifié</p>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="#"><i class="fas fa-user-md"></i> Nos Docteurs</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue sur <span>MonRDV</span></h1>
+            <p>Prenez rendez-vous facilement avec les meilleurs médecins en Algérie</p>
+            <a href="#rdv" class="btn-primary">Prendre un rendez-vous maintenant</a>
+        </div>
+    </section>
+    <div class="container" id="rdv">
+        <h2>Prendre un rendez-vous</h2>
+        
+        <form>
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="Nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="Prenom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="docteur">Choisir un docteur</label>
+                <select id="docteur" name="docteur" required>
+                    <option value="">-- Sélectionnez un médecin --</option>
+                    <option>Dr. Ahmed AL Kilani - Cardiologue</option>
+                    <option>Dr. Leila Mourad - Pédiatre</option>
+                    <option>Dr. Sami EL Hadj - Généraliste</option>
+                    <option>Dr. Sara Benyoussef - Dermatologue</option>
+                    <option>Dr. Rania Chaouache - Gynécologue</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date du rendez-vous</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <button type="submit" class="btn-reserver">
+                <i class="fas fa-calendar-check"></i> Réserver mon rendez-vous
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>
